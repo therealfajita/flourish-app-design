@@ -40,7 +40,11 @@ export function TrickBrowser({ tricks, initialSlug }: { tricks: Trick[]; initial
 
   return (
     <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-10">
-      <section aria-label="Trick library" className={cn('flex w-full flex-col gap-4 md:w-80 md:shrink-0', mobileDetailOpen && 'hidden md:flex')}>
+      <section aria-label="Trick library" className={cn(
+          'flex w-full flex-col gap-4 md:sticky md:top-6 md:h-[calc(100dvh-3rem)] md:w-80 md:shrink-0',
+          mobileDetailOpen && 'hidden md:flex',
+        )}
+      >
         <label className="relative block">
           <span className="sr-only">Search tricks</span>
           <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />

@@ -16,7 +16,7 @@ export function TrickList({
   }
 
   return (
-    <ul className="flex flex-col divide-y rounded-lg border bg-card">
+    <ul className="flex flex-col divide-y rounded-lg border bg-card md:min-h-0 md:flex-1 md:overflow-y-auto md:overscroll-contain">
       {tricks.map((trick) => {
         const active = trick.slug === selectedSlug
         return (
