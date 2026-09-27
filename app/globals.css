@@ -161,3 +161,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+@theme inline {
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+}
+
+.light {
+  --background: oklch(0.965 0.012 85);
+  --foreground: oklch(0.2 0.02 260);
+  --card: oklch(0.99 0.005 85);
+  --card-foreground: oklch(0.2 0.02 260);
+  --primary: oklch(0.52 0.19 25);
+  --primary-foreground: oklch(0.99 0.005 85);
+  --muted: oklch(0.935 0.015 85);
+  --muted-foreground: oklch(0.47 0.02 260);
+  --accent: oklch(0.935 0.015 85);
+  --accent-foreground: oklch(0.2 0.02 260);
+  --border: oklch(0.88 0.018 85);
+  --input: oklch(0.88 0.018 85);
+  --ring: oklch(0.52 0.19 25 / 60%);
+}
